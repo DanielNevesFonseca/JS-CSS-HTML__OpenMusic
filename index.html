@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
-    <title>Open Music</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+  <link rel="stylesheet" href="./src/styles/texts.css" />
+  <link rel="stylesheet" href="./src/styles/buttons.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+  <link rel="stylesheet" href="./src/styles/header.css" />
+  <title>Open Music</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo text1">Open Music</h1>
+    <button class="header__btn-dark-mode">Dark Mode</button>
+  </header>
+
+  <main class="main">
+    <section class="main__manage-filters">
+      <!-- Gerenciar os filtros -->
+      <div class="manage-filters__box">
+        <h2 class="text2">Gênero Musical</h2>
+        <ul class="manage-filters__buttons-container">
+          <!-- botoes de filtragem -->
+        </ul>
+      </div>
+
+      <div class="manage-filters__price-range">
+        <!-- container de textos e inputs -->
+        <h2 class="text2">Definir Preço</h2>
+        <p class="text3">Até R$...</p>
+        <input class="price-range__range" type="range">
+      </div>
+    </section>
+
+    <section class="main__render-cards">
+      <!-- renderizar os cards dos albuns -->
+      <h2 class="text2">Álbuns Encontrados</h2>
+      <ul class="render-cards__container">
+        <!-- cards renderizados -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="./src/scripts/theme.js"></script>
+  <script src="./src/scripts/productsData.js"></script>
+  <script src="./src/scripts/index.js"></script>
+</body>
+
 </html>
