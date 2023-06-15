@@ -131,10 +131,6 @@
     width: 46.9%;
   }
 
-  .item__image {
-    height: 50%;
-  }
-
   .render-cards__container {
     flex-direction: row;
     flex-wrap: wrap;
