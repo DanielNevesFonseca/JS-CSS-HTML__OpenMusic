@@ -1,110 +1,23 @@
-/* header */
-.header {
-  height: 9.375rem;
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background-color: var(--color-grey-9);
+  -webkit-font-smoothing: antialiased;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* main */
-.main {
   max-width: 100%;
-  height: auto;
-  
-  display: flex;
-  flex-direction: column;
-  gap: 3.75rem;
+  padding: 0 10%;
 }
 
-/* main__manageFilters */
-
-.main__manage-filters {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3.75rem;
+.cursor-dark{
+  cursor: url('../assets/icons/cursor-color-black.svg'), auto;
 }
 
-.manage-filters__box {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.cursor-light {
+  cursor: url('../assets/icons/cursor-color-white.svg'), auto;
 }
 
-.manage-filters__buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap:  1.875rem;
-
-}
-
-.manage-filters__price-range {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.manage-filters__price-range > h2, .manage-filters__price-range > p {
-  flex: 1;
-  width: 200px;
-}
-.manage-filters__price-range > p {
-  text-align: right;
-}
-
-.price-range__range {
-  width: 100%;
-}
-
-
-/* main__render-cards */
-
-.main__render-cards {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3.75rem;
-  margin-bottom: 3.125rem;
-}
-
-.render-cards__container {
-  display: flex;
-  flex-direction: column;
-  gap: 2.375rem;
-}
-
-.render-cards__item {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  border-radius: var(--radius-1);
-  background-color: var(--color-grey-8);
-  
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.item__image {
-  width: 100%;
-  max-height: 30%;
-  border-radius: var(--radius-1) var(--radius-1) 0 0;
-}
-
-.price {
-  font-size: 0.875rem;
-}
-
-.item__buy-container {
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-  justify-content: space-between;
-}
-
-.item__name-and-year, .item__album-title, .item__buy-container {
-  margin: 8px 24px;
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0 20%;
+  }
 }
