@@ -1,13 +1,6 @@
 export const products = [
-  {
-    title: "Magnetite",
-    category: 8,
-    price: 89.0,
-    img: "./src/assets/img/1.jpg",
-    band: "Scalene",
-    year: 2017,
-    id: 0,
-  },
+  
+
   {
     title: "Acabou o Chorare",
     category: 2,
